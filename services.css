@@ -22,7 +22,7 @@
     transition: all 0.3s ease;
 }
 
-/* Effect when you hover over a service card */
+
 .service-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -44,4 +44,17 @@
     font-size: 0.95rem;
     color: #555;
     line-height: 1.5;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+main, .content-wrapper { 
+    flex: 1; 
 }

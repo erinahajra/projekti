@@ -125,3 +125,18 @@
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
 }
+
+/* Footer Styles */
+.main-footer {
+    background-color: #222;
+    color: #ffffff;         
+    text-align: center;    
+    padding: 20px 0;      
+    width: 100%;
+    font-family: Arial, sans-serif; 
+    font-size: 14px;
+}
+
+.main-footer p {
+    margin: 0;      
+}

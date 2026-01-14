@@ -6,12 +6,12 @@
 }
 
 body {
-    background: #0f172a; /* Ngjyrë e errët si në foton tënde, por më e pasur */
+    background: #031338; /* Ngjyrë e errët si në foton tënde, por më e pasur */
     background-image: radial-gradient(circle at top right, #333, #333, #0f172a);
     font-family: 'Segoe UI', sans-serif;
     color: white;
     min-height: 100vh;
-    padding: 50px 20px;
+    padding: 0px 20px;
 }
 
 .creative-container {
@@ -36,8 +36,8 @@ body {
 
 /* (Glassmorphism) */
 .glass-card {
-    background: rgba(255, 255, 255, 0.05); /* Transparenca */
-    backdrop-filter: blur(12px); /* Kjo e bën flunë/mjegullën prapa */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px); 
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 40px;
@@ -87,7 +87,7 @@ body {
 
 /* --- FOOTER STYLES --- */
 .main-footer {
-    margin-top: 80px; /* Hapësira mes blogut dhe footer-it */
+    margin-top: 80px;
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
