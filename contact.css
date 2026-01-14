@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-section {
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Creative Background */
+.background-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.circle-1 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    top: 10%;
+    left: 15%;
+}
+
+.circle-2 {
+    width: 400px;
+    height: 400px;
+    background: #333;
+    bottom: 10%;
+    right: 15%;
+}
+
+/* Glassmorphism Container */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    width: 900px;
+    overflow: hidden;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    color: white;
+}
+
+.contact-info h2 { font-size: 2rem; margin-bottom: 20px; }
+
+.info-item { margin: 20px 0; font-size: 1.1rem; }
+
+/* Animated Form Inputs */
+.contact-form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: rgba(255,255,255,0.5);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label {
+    top: -15px;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.submit-btn {
+    background: #333;
+    color: #0f172a;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}

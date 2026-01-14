@@ -1,0 +1,100 @@
+/* --- FAQ SECTION STYLES --- */
+
+.faq-wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Stili i kutisë së pyetjes */
+.faq-item {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.faq-item:hover {
+    border-color: #007bff;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.1);
+}
+
+/* Stili i pyetjes (Titulli) */
+summary {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 15px 0;
+    list-style: none; /* Heq shigjetën standarde të browser-it */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+
+/* Shto një simbol "+" në fund të pyetjes */
+summary::after {
+    content: '+';
+    color: #007bff;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+/* Kur blloku është i hapur, ndrysho simbolin në "-" */
+details[open] summary::after {
+    content: '−';
+    transform: rotate(180deg);
+}
+
+/* Stili i përgjigjes */
+.faq-answer {
+    padding-bottom: 20px;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-top: 1px solid #f9f9f9;
+    padding-top: 15px;
+}
+
+/* Animacion i thjeshtë për shfaqjen e tekstit */
+details[open] .faq-answer {
+    animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    background-attachment: fixed; /* E mban sfondin fiks gjatë lëvizjes */
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(0, 123, 255, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(0, 123, 255, 0.05) 0px, transparent 50%);
+}
+
+.faq-wrapper {
+    max-width: 1000px; /* E bën më të gjerë se faqja aktuale */
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 25px; /* Shton hapësirë mes kutive */
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03); /* Shton hije që të duket "mbi" sfond */
+    border: 1px solid #f0f0f0;
+}
+
+summary {
+    padding: 25px; /* E bën kutinë më të lartë dhe më të lehtë për t'u klikuar */
+    font-size: 1.2rem;
+}

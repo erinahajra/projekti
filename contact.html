@@ -1,10 +1,61 @@
-<div class="container mt-5">
-  <h1>Contact Me</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="contact.css" rel="stylesheet" />
+  <link href="navbar.css" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+        <ul>
+           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="terms.html">Terms</a></li>
+        </ul>
+    </nav>
+    <section class="contact-section">
+        <div class="background-circles">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's Connect</h2>
+                <p>Have a project in mind? Reach out and let's build something amazing together.</p>
+                <div class="info-item">
+                    <span>📍</span> Prishtina, Kosovo
+                </div>
+                <div class="info-item">
+                    <span>📧</span> hello@yourdomain.com
+                </div>
+            </div>
 
-  <form onsubmit="return validateForm()">
-    <input type="text" class="form-control mb-2" placeholder="Name" required>
-    <input type="email" class="form-control mb-2" placeholder="Email" required>
-    <textarea class="form-control mb-2" placeholder="Message" required></textarea>
-    <button class="btn btn-primary">Send</button>
-  </form>
-</div>
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email Address</label>
+                </div>
+                <div class="input-group">
+                    <textarea required rows="4"></textarea>
+                    <label>How can we help?</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
